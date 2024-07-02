@@ -43,12 +43,12 @@ const Navbar = () => {
     <nav
       className={`fixed z-50 w-full p-6 ${
         scrollScreen
-          ? "bg-gradient-to-r from-[#1FB382] to-[#24DFDE] shadow-2xl"
+          ? "bg-[#000000] "
           : "bg-transparent"
       }`}
     >
       <div className="max-w-7xl container mx-auto flex justify-between items-center">
-        <div className="text-white text-xl">My Website</div>
+        <div className="text-white text-4xl">Portfolio</div>
         <ul className="hidden md:flex space-x-4">
           {links.map((link) => (
             <li key={link.href}>

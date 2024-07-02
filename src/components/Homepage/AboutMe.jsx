@@ -1,30 +1,30 @@
 import Image from "next/image";
 
+
+
 const AboutMe = () => {
   // Assuming the profile image is located in the public/images directory
-  const profileImagePath = '/images/githubProfile.jpg';
-
+  const profileImagePath = '/images/banner.jpg';
+  const sectionStyle = {
+    background: 'linear-gradient(180deg, #000 0%, rgba(37, 37, 37, 0.99) 100%)',
+    color: 'white', 
+ 
+  };
   return (
-    <section id='about' className='bg-gray-900 text-white py-20'>
-      <div className='container mx-auto flex flex-col md:flex-row items-center gap-6'>
+<section id='about' style={sectionStyle} className="py-20">
+      <div className='container mx-auto px-3 md:px-0 flex gap-10 flex-col-reverse  md:flex-row items-center gap-6'>
         {/* Profile Image */}
         <div className='w-full md:w-1/3 flex flex-col justify-center md:items-start items-center mb-8 md:mb-0'>
           {/* Dynamically import image */}
           <Image
             src={profileImagePath}
             alt="GitHub Profile"
-            className='w-64 h-64 object-cover rounded-full border-4 border-teal-500'
-            width={300}
+            className='w-[330px] h-[330px] object-cover border-0 rounded-full'
+            width={330}
           
-            height={200}
+            height={330}
           />
-          <a
-            href='/path/to/resume.pdf' // Replace with actual resume link
-            className='mt-4 px-4 py-2 bg-teal-500 text-white rounded shadow-lg hover:bg-teal-700 w-48 text-center md:ml-[8%]'
-            download
-          >
-            Download Resume
-          </a>
+
         </div>
 
         {/* About Me Details */}
@@ -68,7 +68,7 @@ const AboutMe = () => {
       </div>
 
       {/* My Interests */}
-      <div className='container mx-auto mt-20'>
+      {/* <div className='container mx-auto mt-20'>
         <h3 className='text-3xl font-bold text-teal-500 mb-4 text-center'>
           MY INTERESTS
         </h3>
@@ -86,7 +86,7 @@ const AboutMe = () => {
             <p>Coffee</p>
           </div>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 };

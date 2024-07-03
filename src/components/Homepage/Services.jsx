@@ -19,7 +19,7 @@ const Services = () => {
     <section id="services" style={sectionStyle} className="">
       <div className="pt-20 px-3 md:px-0">
         <h2 className="text-[40px] font-semibold text-center">
-          My <span>Services</span>
+          My <span className="text-primary">Services</span>
         </h2>
         <hr className="w-[240px] text-center block mx-auto mt-2 h-[2px] font-semibold text-white" />
 

@@ -40,7 +40,7 @@ const Banner = () => {
           <h2 className="h-[58px] w-[2px] font-bold mt-4">|</h2>
 
           <p className="text-2xl leading-[38px]">
-            I’m a Mathematics Student, Who is <br /> Passionate in Programming
+            I’m a Mathematics Student, Who is <br /> Passionate in <span className="text-primary">Programming</span>
           </p>
 
           <button

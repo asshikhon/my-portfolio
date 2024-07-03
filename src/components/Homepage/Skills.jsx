@@ -23,7 +23,9 @@ const Skills = () => {
   return (
     <section id="skill" style={sectionStyle} className=''>
       <div className="container mx-auto pt-8 px-3 md:px-0 mb-[140px]">
-        <h2 className="text-4xl mb-10 text-center">My Skills</h2>
+        <h2 className="text-[40px] font-bold  text-center">My <span className='text-primary'>Skills</span></h2>
+
+        <hr className='mb-10 w-[240px] text-center block mx-auto mt-2 h-[2px] font-semibold text-white' />
         <p className="text-center w-[70%] md:w-[40%] block mx-auto mb-10">
           We transform your ideas and desires into a distinctive web project
           that inspires both you and your customers

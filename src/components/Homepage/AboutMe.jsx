@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import Image from "next/image";
 import 'animate.css';
 
@@ -33,14 +34,11 @@ const AboutMe = () => {
         <div className='w-full md:w-2/3'>
           <h2 className='text-4xl font-bold text-teal-500 mb-4'>ABOUT ME</h2>
           <p className='text-lg leading-relaxed'>
-            Hello! I am a junior MERN Stack Developer currently studying B.Sc
-            IN CSE at Uttara University. I specialize in HTML, CSS,
-            JavaScript, and React JS, creating responsive, user-friendly
-            websites. I aim to leverage my technical skills and passion for
-            web development to contribute to a dynamic team and grow
-            professionally in a forward-thinking company. My goal is to work
-            in a competitive environment where I can develop as a professional
-            and help achieve the organization&apos;s goals.
+          Hello! I am a dedicated junior MERN Stack Developer currently pursuing a Bachelor's degree in Mathematics at Bhawal Badre Alam Government College. I have a strong foundation in HTML, CSS, JavaScript, and React JS, and I excel at creating responsive and user-friendly websites.
+
+I am passionate about web development and eager to leverage my technical skills to contribute to innovative projects and dynamic teams. My ambition is to grow professionally in a forward-thinking company where I can continually develop my expertise and help achieve organizational goals.
+
+I thrive in competitive environments that challenge me to push the boundaries of my capabilities. My ultimate aim is to become a valued contributor to the tech community, continuously learning and evolving while making significant impacts through my work.
           </p>
           <div className='mt-8 space-y-2'>
             <p>

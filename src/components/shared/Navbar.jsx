@@ -5,10 +5,11 @@ import Link from "next/link";
 const links = [
   { href: "/#home", label: "Home" },
   { href: "/#about", label: "About" },
-  { href: "/#skill", label: "Skills" },
   { href: "/#services", label: "Services" },
-  { href: "/#contact", label: "Contact" },
+  { href: "/#skill", label: "Skills" },
   { href: "/#education", label: "Education" },
+  { href: "/#projects", label: "Projects" },
+  { href: "/#contact", label: "Contact" },
 ];
 
 const Navbar = () => {
@@ -48,15 +49,15 @@ const Navbar = () => {
       }`}
     >
       <div className="container mx-auto flex justify-between items-center">
-        <div className="text-primary text-4xl">Portfolio</div>
+        <div className="text-primary text-4xl font-bold uppercase">Portfolio</div>
         <ul className="hidden md:flex space-x-4">
           {links.map((link) => (
             <li key={link.href}>
               <Link href={link.href} legacyBehavior>
                 <a
-                  className={`text-white hover:text-gray-300 ${
+                  className={`text-white hover:text-primary ${
                     activeLink === link.href
-                      ? "font-bold text-teal-400 border-b-2 border-primary"
+                      ? "font-bold text-teal-600 border-b-2 border-primary"
                       : ""
                   }`}
                   onClick={() => handleLinkClick(link.href)}

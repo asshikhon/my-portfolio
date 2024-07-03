@@ -4,6 +4,8 @@ export default async function handler(req, res) {
   if (req.method === 'POST') {
     const { email, subject, message } = req.body;
 
+    console.log(req.body);
+
     try {
       // Ensure environment variables are set
       if (!process.env.EMAIL_USER || !process.env.EMAIL_PASS) {
@@ -19,10 +21,10 @@ export default async function handler(req, res) {
       });
 
       const mailOptions = {
-        from: email,
-        to: process.env.EMAIL_USER,
+        from: process.env.EMAIL_USER, // Sending from your configured email
+        to: process.env.EMAIL_USER, // Receiving to your configured email
         subject: subject,
-        text: message,
+        text: `Message from: ${email}\n\n${message}`, // Include the sender's email in the message body
       };
 
       const info = await transporter.sendMail(mailOptions);

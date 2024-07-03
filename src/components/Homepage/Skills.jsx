@@ -2,6 +2,12 @@
 import { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { FaProjectDiagram } from 'react-icons/fa';
+import { MdOutlineAddReaction } from "react-icons/md";
+import { SiSteamworks } from "react-icons/si";
+import { GiSatelliteCommunication } from "react-icons/gi";
+import { GiThink } from "react-icons/gi";
+import { IoIosTime } from "react-icons/io";
 
 const Skills = () => {
   useEffect(() => {
@@ -30,7 +36,7 @@ const Skills = () => {
             <div data-aos="zoom-in" data-aos-duration="700" className="bg-sectionColor p-4 rounded-xl w-full h-52 grid place-content-center border overflow-hidden duration-300 group hover:bg-[#0b5f55] hover:border-0 dark:hover:border-primaryColorLight aos-init aos-animate">
               <div className="text-center text-wrap duration-300 group-hover:scale-125">
                 <h1 data-aos="fade-up-right" data-aos-duration="1500" className="text-xl md:text-2xl group-hover:text-whiteColor">Project Management</h1>
-                <p data-aos="fade-up-left" data-aos-duration="1500" className="text-md md:text-lg group-hover:text-whiteColor"  >78%</p>
+                <p data-aos="fade-up-left" data-aos-duration="1500" className="text-md md:text-lg group-hover:text-whiteColor mt-3"  ><FaProjectDiagram className='text-3xl text-center block mx-auto' /></p>
               </div>
             </div>
              {/* 2nd card */}
@@ -38,7 +44,7 @@ const Skills = () => {
               <div className="text-center text-wrap duration-300 group-hover:scale-125">
                 <h1 data-aos="fade-up-right" data-aos-duration="1500" className="text-xl md:text-2xl group-hover:text-whiteColor">Public Relations
                 </h1>
-                <p data-aos="fade-up-left" data-aos-duration="1500" className="text-md md:text-lg group-hover:text-whiteColor"  >98%</p>
+                <p data-aos="fade-up-left" data-aos-duration="1500" className="text-md md:text-lg group-hover:text-whiteColor mt-3"  > <MdOutlineAddReaction className='text-3xl text-center block mx-auto' /></p>
               </div>
             </div>
              {/* 3rd card */}
@@ -46,7 +52,7 @@ const Skills = () => {
               <div className="text-center text-wrap duration-300 group-hover:scale-125">
                 <h1 data-aos="fade-up-right" data-aos-duration="1500" className="text-xl md:text-2xl group-hover:text-whiteColor">TeamWork
                 </h1>
-                <p data-aos="fade-up-left" data-aos-duration="1500" className="text-md md:text-lg group-hover:text-whiteColor"  >82%</p>
+                <p data-aos="fade-up-left" data-aos-duration="1500" className="text-md md:text-lg group-hover:text-whiteColor mt-3"  > <SiSteamworks className='text-4xl text-center block mx-auto' /></p>
               </div>
             </div>
              {/* 4th card */}
@@ -54,7 +60,7 @@ const Skills = () => {
               <div className="text-center text-wrap duration-300 group-hover:scale-125">
                 <h1 data-aos="fade-up-right" data-aos-duration="1500" className="text-xl md:text-2xl group-hover:text-whiteColor">Effective Communication
                 </h1>
-                <p data-aos="fade-up-left" data-aos-duration="1500" className="text-md md:text-lg group-hover:text-whiteColor"  >94%</p>
+                <p data-aos="fade-up-left" data-aos-duration="1500" className="text-md md:text-lg group-hover:text-whiteColor mt-3"  > <GiSatelliteCommunication className='text-3xl text-center block mx-auto' /></p>
               </div>
             </div>
              {/* 5th card */}
@@ -62,7 +68,7 @@ const Skills = () => {
               <div className="text-center text-wrap duration-300 group-hover:scale-125">
                 <h1 data-aos="fade-up-right" data-aos-duration="1500" className="text-xl md:text-2xl group-hover:text-whiteColor">Critical Thinking
               </h1>
-                <p data-aos="fade-up-left" data-aos-duration="1500" className="text-md md:text-lg group-hover:text-whiteColor"  >  82%</p>
+              <p data-aos="fade-up-left" data-aos-duration="1500" className="text-md md:text-lg group-hover:text-whiteColor mt-3"  > <GiThink className='text-3xl text-center block mx-auto' /></p>
               </div>
             </div>
              {/* 6th card */}
@@ -70,7 +76,7 @@ const Skills = () => {
               <div className="text-center text-wrap duration-300 group-hover:scale-125">
                 <h1 data-aos="fade-up-right" data-aos-duration="1500" className="text-xl md:text-2xl group-hover:text-whiteColor">Time Management
               </h1>
-                <p data-aos="fade-up-left" data-aos-duration="1500" className="text-md md:text-lg group-hover:text-whiteColor"  >  95%</p>
+              <p data-aos="fade-up-left" data-aos-duration="1500" className="text-md md:text-lg group-hover:text-whiteColor mt-3"  > <IoIosTime  className='text-3xl text-center block mx-auto' /></p>
               </div>
             </div>
           

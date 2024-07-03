@@ -1,4 +1,5 @@
 import Image from "next/image";
+import 'animate.css';
 
 
 
@@ -6,7 +7,7 @@ const AboutMe = () => {
   // Assuming the profile image is located in the public/images directory
   const profileImagePath = '/images/banner.jpg';
   const sectionStyle = {
-    background: 'linear-gradient(180deg, #000 0%, rgba(37, 37, 37, 0.99) 100%)',
+    background: 'linear-gradient(180deg, #000 0%, rgba(37, 37, 37, 1) 100%)',
     color: 'white', 
  
   };
@@ -17,9 +18,10 @@ const AboutMe = () => {
         <div className='w-full md:w-1/3 flex flex-col justify-center md:items-start items-center mb-8 md:mb-0'>
           {/* Dynamically import image */}
           <Image
+        
             src={profileImagePath}
             alt="GitHub Profile"
-            className='w-[330px] h-[330px] object-cover border-0 rounded-full'
+            className='w-[330px] animate__animated animate__fadeInTopRight h-[330px] object-cover border-0 rounded-full'
             width={330}
           
             height={330}

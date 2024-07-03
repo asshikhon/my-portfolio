@@ -31,7 +31,7 @@ const Banner = () => {
           <Image
             src={profileImagePath}
             alt="GitHub Profile"
-            className="w-[330px] h-[330px]  mt-6 object-cover border-0 rounded-full"
+            className="w-[330px] h-[330px] animate__animated animate__fadeInTopLeft mt-6 object-cover border-0 rounded-full"
             width={330}
             height={330}
           />

@@ -8,6 +8,7 @@ const links = [
   { href: "/#skill", label: "Skills" },
   { href: "/#services", label: "Services" },
   { href: "/#contact", label: "Contact" },
+  { href: "/#education", label: "Education" },
 ];
 
 const Navbar = () => {
@@ -47,7 +48,7 @@ const Navbar = () => {
       }`}
     >
       <div className="container mx-auto flex justify-between items-center">
-        <div className="text-white text-4xl">Portfolio</div>
+        <div className="text-primary text-4xl">Portfolio</div>
         <ul className="hidden md:flex space-x-4">
           {links.map((link) => (
             <li key={link.href}>
@@ -55,7 +56,7 @@ const Navbar = () => {
                 <a
                   className={`text-white hover:text-gray-300 ${
                     activeLink === link.href
-                      ? "font-bold border-b-2 border-white"
+                      ? "font-bold text-teal-400 border-b-2 border-primary"
                       : ""
                   }`}
                   onClick={() => handleLinkClick(link.href)}

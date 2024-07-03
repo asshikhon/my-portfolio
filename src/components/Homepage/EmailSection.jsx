@@ -51,9 +51,9 @@ const EmailSection = () => {
   };
 
   return (
-    <section id="contact" style={sectionStyle} className="">
-      <div className="container mx-auto flex gap-16 flex-col md:flex-row justify-between items-start py-12">
-        <div className="md:w-1/2">
+    <section id="contact" style={sectionStyle}>
+      <div className="container mx-auto flex flex-col md:flex-row gap-16 px-3 md:px-0 justify-between items-start py-12">
+        <div className="md:w-1/2 w-full">
           <h5 className="text-4xl font-bold text-primary my-4">
             Let&apos;s Connect
           </h5>
@@ -71,14 +71,14 @@ const EmailSection = () => {
             </Link>
           </div>
         </div>
-        <div className="md:w-1/2">
+        <div className="md:w-1/2 w-full">
           {emailSubmitted ? (
             <p className="text-green-500 text-4xl mt-12 ">
               Email sent successfully!
             </p>
           ) : (
             <form className="flex flex-col w-full" onSubmit={handleSubmit}>
-              <div className="mb-6">
+              <div className="mb-6 w-full">
                 <label
                   htmlFor="email"
                   className="text-primary block mb-2 text-sm font-medium"
@@ -91,10 +91,10 @@ const EmailSection = () => {
                   id="email"
                   required
                   className="bg-[#18191E] border border-primary placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
-                  placeholder="jacob@google.com"
+                  placeholder="jacob@gmail.com"
                 />
               </div>
-              <div className="mb-6">
+              <div className="mb-6 w-full">
                 <label
                   htmlFor="subject"
                   className="text-primary block text-sm mb-2 font-medium"
@@ -107,10 +107,10 @@ const EmailSection = () => {
                   id="subject"
                   required
                   className="bg-[#18191E] border border-primary placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
-                  placeholder="Just saying hi"
+                  placeholder="Please enter your Subject"
                 />
               </div>
-              <div className="mb-6">
+              <div className="mb-6 w-full">
                 <label
                   htmlFor="message"
                   className="text-primary block text-sm mb-2 font-medium"

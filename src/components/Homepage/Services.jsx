@@ -17,7 +17,7 @@ const Services = () => {
 
   return (
     <section id="services" style={sectionStyle} className="">
-      <div className="pt-20">
+      <div className="pt-20 px-3 md:px-0">
         <h2 className="text-[40px] font-semibold text-center">
           My <span>Services</span>
         </h2>
@@ -27,7 +27,7 @@ const Services = () => {
           data-aos="flip-left"
           data-aos-easing="ease-out-cubic"
           data-aos-duration="2000"
-          className="w-[370px] h-[400px] border border-primary rounded-lg p-12 text-center block mx-auto mt-12"
+          className="w-auto md:w-[370px] h-auto md:h-[400px] border border-primary rounded-lg p-12 text-center block mx-auto mt-12"
         >
           <h5
             data-aos="zoom-in-up"

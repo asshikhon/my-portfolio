@@ -31,7 +31,7 @@ const AboutMe = () => {
         </div>
 
         {/* About Me Details */}
-        <div className='w-full md:w-2/3'>
+        <div className='w-full md:w-2/3 animate__animated animate__slideInLeft'>
           <h2 className='text-4xl font-bold text-teal-500 mb-4'>ABOUT ME</h2>
           <p className='text-lg leading-relaxed'>
           Hello! I am a dedicated junior MERN Stack Developer currently pursuing a Bachelor's degree in Mathematics at Bhawal Badre Alam Government College. I have a strong foundation in HTML, CSS, JavaScript, and React JS, and I excel at creating responsive and user-friendly websites.

@@ -14,9 +14,10 @@ const Homepage = () => {
             <AboutMe />
             <Services />
             <Skills />
+            <Education />
             <Projects />
             <EmailSection />
-            <Education />
+          
         </div>
     );
 };

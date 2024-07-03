@@ -2,6 +2,7 @@
 import Image from "next/image";
 import React from "react";
 import { FaFileDownload } from "react-icons/fa";
+import { Typewriter } from 'react-simple-typewriter'
 
 const Banner = () => {
   const profileImagePath = "/images/banner.jpg";
@@ -36,16 +37,49 @@ const Banner = () => {
     <div id="home" className="bg-[#000]">
       <div className="text-[#FFFFFF] px-3 md:px-0 flex justify-between flex-col md:flex-row gap-12 items-center container mx-auto py-28">
         <div className="mt-12">
-          <h1 className="text-[32px] font-bold">Hello, It’s Me</h1>
+          {/* <h1 className="text-[32px] font-bold">Hello, It’s Me</h1> */}
+
+          <div className="font-semibold text-[#FFFFFF] text-[30px] ">
+            
+  <Typewriter 
+    words={['Hello It’s Me']}
+    loop={true}
+    cursor
+    cursorStyle='~~~'
+    typeSpeed={170}
+    deleteSpeed={80}
+    delaySpeed={1200}
+    style={{ fontSize: '24px' }} // Increase the text size
+  />
+</div>
+
           <h2 className="h-[58px] w-[2px] font-bold mt-4">|</h2>
 
-          <p className="text-2xl leading-[38px]">
-            I’m a Mathematics Student, Who is <br /> Passionate in <span className="text-primary">Programming</span>
-          </p>
+          <div className="text-2xl leading-[38px]">
+            I’m a Mathematics Student, Who is <br /> Passionate in
+             
+            <div className="font-semibold text-primary text-2xl ">
+            
+            <Typewriter 
+              words={['Programming']}
+              loop={true}
+              cursor
+              cursorStyle='~~~'
+              typeSpeed={170}
+              deleteSpeed={80}
+              delaySpeed={1200}
+              style={{ fontSize: '24px' }} // Increase the text size
+            />
+          </div>
+       
+
+          </div>
+
+
 
           <button
             onClick={handleDownload}
-            className="px-4 py-2 flex items-center gap-3 bg-white text-black rounded shadow-lg hover:bg-teal-700 hover:text-white w-[130px] font-bold mt-[60px] text-center"
+            className="px-4 py-2 animate__animated animate__backInRight flex items-center gap-3 bg-white text-black rounded shadow-lg hover:bg-teal-700 hover:text-white w-[130px] font-bold mt-[60px] text-center"
           >
             <FaFileDownload />
             Resume

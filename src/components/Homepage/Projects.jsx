@@ -3,14 +3,14 @@ import React from "react";
 
 const Projects = () => {
   const sectionStyle = {
-    background: " linear-gradient(180deg, #252525 0%, #000 100%)",
+    background: " linear-gradient(180deg, #000 3.76%, #252525 100%)",
     color: "white",
     padding: "20px 0", // Adjust padding as needed
   };
 
   return (
     <section id="projects" style={sectionStyle} className="">
-      <div className="container mx-auto py-10 md:py-16">
+      <div className="container mx-auto py-10 md:pt-20">
         <h2 className="text-[40px] font-semibold text-center">
           My <span className="text-primary">Projects</span>
         </h2>

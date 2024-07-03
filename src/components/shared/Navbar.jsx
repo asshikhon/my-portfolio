@@ -49,8 +49,8 @@ const Navbar = () => {
       }`}
     >
       <div className="container mx-auto flex justify-between items-center">
-        <div className="text-primary text-4xl font-bold uppercase">Portfolio</div>
-        <ul className="hidden md:flex space-x-4">
+        <div className="text-primary animate__animated animate__fadeInBottomRight text-4xl font-bold uppercase">Portfolio</div>
+        <ul className="hidden md:flex animate__animated animate__rollIn space-x-4">
           {links.map((link) => (
             <li key={link.href}>
               <Link href={link.href} legacyBehavior>

@@ -52,7 +52,7 @@ const EmailSection = () => {
 
   return (
     <section id="contact" style={sectionStyle}>
-      <div className="container mx-auto flex flex-col md:flex-row gap-16 px-3 md:px-0 justify-between items-start py-12">
+      <div className="container mx-auto flex flex-col animate__animated animate__zoomInDown md:flex-row gap-16 px-3 md:px-0 justify-between items-start py-12 md:pb-28">
         <div className="md:w-1/2 w-full">
           <h5 className="text-4xl font-bold text-primary my-4">
             Let&apos;s Connect

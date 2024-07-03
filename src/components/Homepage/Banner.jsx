@@ -6,7 +6,7 @@ const Banner = () => {
   const profileImagePath = "/images/banner.jpg";
 
   return (
-    <div className=" bg-[#000]">
+    <div id="home" className=" bg-[#000]">
       <div className="text-[#FFFFFF] px-3 md:px-0 flex justify-between flex-col md:flex-row gap-12 items-center container mx-auto py-28">
         <div className="mt-12"> 
           <h1 className="text-[32px] font-bold ">Hello, It’s Me</h1>
@@ -18,7 +18,7 @@ const Banner = () => {
 
           <a
             href='/path/to/resume.pdf' // Replace with actual resume link
-            className=' px-4 py-2 flex items-center gap-3 bg-white text-black rounded shadow-lg hover:bg-teal-700 w-[130px] font-bold mt-[60px] text-center'
+            className=' px-4 py-2 flex items-center gap-3 bg-white text-black rounded shadow-lg hover:bg-teal-700 hover:text-white w-[130px] font-bold mt-[60px] text-center'
             download
           >
             <FaFileDownload />
@@ -31,7 +31,7 @@ const Banner = () => {
           <Image
             src={profileImagePath}
             alt="GitHub Profile"
-            className="w-[330px] h-[330px] mt-6 object-cover border-0 rounded-full"
+            className="w-[330px] h-[330px]  mt-6 object-cover border-0 rounded-full"
             width={330}
             height={330}
           />

@@ -5,6 +5,7 @@ import Link from "next/link";
 const links = [
   { href: "/#home", label: "Home" },
   { href: "/#about", label: "About" },
+  { href: "/#skill", label: "Skills" },
   { href: "/#services", label: "Services" },
   { href: "/#contact", label: "Contact" },
 ];
@@ -35,19 +36,17 @@ const Navbar = () => {
     handleSetActive(href);
     setOpen(false);
     if (isClient) {
-      window.location.hash = href.split('#')[1]; // navigate to the section
+      window.location.hash = href.split("#")[1]; // navigate to the section
     }
   };
 
   return (
     <nav
       className={`fixed z-50 w-full p-6 ${
-        scrollScreen
-          ? "bg-[#000000] "
-          : "bg-transparent"
+        scrollScreen ? "bg-[#000000] " : "bg-transparent"
       }`}
     >
-      <div className="max-w-7xl container mx-auto flex justify-between items-center">
+      <div className="container mx-auto flex justify-between items-center">
         <div className="text-white text-4xl">Portfolio</div>
         <ul className="hidden md:flex space-x-4">
           {links.map((link) => (
@@ -88,7 +87,7 @@ const Navbar = () => {
         <ul
           className={`md:hidden ${
             open ? "block" : "hidden"
-          } bg-blue-800 rounded-xl p-4 space-y-2 w-32 text-center ml-auto`}
+          } bg-[#000000] rounded-xl p-4 text-[#FFF] space-y-2 w-32 text-center ml-auto`}
         >
           {links.map((link) => (
             <li key={link.href}>

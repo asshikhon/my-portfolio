@@ -12,7 +12,7 @@ const AboutMe = () => {
   };
   return (
 <section id='about' style={sectionStyle} className="py-20">
-      <div className='container mx-auto px-3 md:px-0 flex gap-10 flex-col-reverse  md:flex-row items-center gap-6'>
+      <div className='container mx-auto px-3 md:px-0 flex gap-10 flex-col-reverse  md:flex-row items-center'>
         {/* Profile Image */}
         <div className='w-full md:w-1/3 flex flex-col justify-center md:items-start items-center mb-8 md:mb-0'>
           {/* Dynamically import image */}

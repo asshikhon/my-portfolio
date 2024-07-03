@@ -22,12 +22,12 @@ module.exports = {
       {
         myPortfolio: {
           ...require("daisyui/src/theming/themes")["light"],
-          primary: "#FF3811",
+          primary: "#14B8A6",
           secondary: "teal",
    
-          // "btn-primary": {
-          //   "color": "#fff"
-          // },
+          "text-primary": {
+            "color": "#14B8A6"
+          },
           // ".btn-outline.btn-primary:hover": {
           //   "color": "#fff"
           // }

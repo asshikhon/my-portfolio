@@ -57,7 +57,7 @@ const Navbar = () => {
                 <a
                   className={`text-white hover:text-primary ${
                     activeLink === link.href
-                      ? "font-bold text-teal-600 border-b-2 border-primary"
+                      ? "font-bold text-[#2EB9A6] border-b-2 border-primary"
                       : ""
                   }`}
                   onClick={() => handleLinkClick(link.href)}

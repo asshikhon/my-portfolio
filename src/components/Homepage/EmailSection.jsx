@@ -2,15 +2,23 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import Swal from "sweetalert2";
 
 const EmailSection = () => {
   const [emailSubmitted, setEmailSubmitted] = useState(false);
   const [error, setError] = useState(null);
 
   const sectionStyle = {
-    background: "linear-gradient(180deg, #252525 0%, #000 100%)",
-    color: "white",
+    background: "linear-gradient(180deg, #1a1a1a 0%, #0d0d0d 100%)",
+    color: "#f0f0f0",
     padding: "20px 0", // Adjust padding as needed
+  };
+
+  const inputStyle = {
+    backgroundColor: "#2c2c2c",
+    borderColor: "#4a90e2",
+    color: "#f0f0f0",
+    placeholderColor: "#a0a0a0",
   };
 
   const handleSubmit = async (e) => {
@@ -38,36 +46,44 @@ const EmailSection = () => {
       const resData = await response.json();
 
       if (response.status === 200) {
-        console.log("Message sent.");
+        Swal.fire({
+          
+          icon: "success",
+          title: "Email Sent Successfully!",
+          text: "Thank you for reaching out. I will get back to you shortly.",
+          showConfirmButton: false,
+          timer: 2000,
+          background: "#0A5C53",
+          color: "#FFF",
+        });
+
         setEmailSubmitted(true);
       } else {
-        console.error("Error sending email:", resData.error);
         setError(resData.error);
       }
     } catch (error) {
-      console.error("Fetch error:", error);
       setError("Fetch error occurred");
     }
   };
 
   return (
     <section id="contact" style={sectionStyle}>
-      <div className="container mx-auto flex flex-col animate__animated animate__zoomInDown md:flex-row gap-16 px-3 md:px-0 justify-between items-start py-12 md:pb-28">
+      <div className="container mx-auto flex flex-col md:flex-row gap-16 px-3 md:px-0 justify-between items-start py-12 md:pb-28">
         <div className="md:w-1/2 w-full">
           <h5 className="text-4xl font-bold text-primary my-4">
             Let&apos;s Connect
           </h5>
-          <p className="text-[#FFF] mb-8">
+          <p className="text-[#f0f0f0] mb-8">
             I&apos;m currently looking for new opportunities, my inbox is always
             open. Whether you have a question or just want to say hi, I&apos;ll
             try my best to get back to you!
           </p>
           <div className="socials flex flex-row gap-2">
             <Link href="https://github.com/asshikhon">
-              <FaGithub className="text-3xl mr-3 hover:bg-primary rounded-full" />
+              <FaGithub className="text-3xl mr-3 hover:text-primary rounded-full" />
             </Link>
             <Link href="https://www.linkedin.com/in/asshikhon">
-              <FaLinkedin className="text-3xl hover:bg-primary rounded-full" />
+              <FaLinkedin className="text-3xl hover:text-primary rounded-full" />
             </Link>
           </div>
         </div>
@@ -90,7 +106,8 @@ const EmailSection = () => {
                   type="email"
                   id="email"
                   required
-                  className="bg-[#18191E] border border-primary placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
+                  style={inputStyle}
+                  className="bg-[#2c2c2c] border border-primary placeholder-[#a0a0a0] text-gray-100 text-sm rounded-lg block w-full p-2.5"
                   placeholder="jacob@gmail.com"
                 />
               </div>
@@ -106,7 +123,8 @@ const EmailSection = () => {
                   type="text"
                   id="subject"
                   required
-                  className="bg-[#18191E] border border-primary placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
+                  style={inputStyle}
+                  className="bg-[#2c2c2c] border border-primary placeholder-[#a0a0a0] text-gray-100 text-sm rounded-lg block w-full p-2.5"
                   placeholder="Please enter your Subject"
                 />
               </div>
@@ -120,7 +138,9 @@ const EmailSection = () => {
                 <textarea
                   name="message"
                   id="message"
-                  className="bg-[#18191E] border border-primary placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
+                  required
+                  style={inputStyle}
+                  className="bg-[#2c2c2c] border border-primary placeholder-[#a0a0a0] text-gray-100 text-sm rounded-lg block w-full p-2.5"
                   placeholder="Let's talk about..."
                 />
               </div>

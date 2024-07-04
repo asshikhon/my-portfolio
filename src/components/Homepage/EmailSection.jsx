@@ -9,7 +9,7 @@ const EmailSection = () => {
   const [error, setError] = useState(null);
 
   const sectionStyle = {
-    background: "linear-gradient(180deg, #1a1a1a 0%, #0d0d0d 100%)",
+    background: "linear-gradient(180deg, #252525 5.9%, #000 100%)",
     color: "#f0f0f0",
     padding: "20px 0", // Adjust padding as needed
   };
@@ -94,7 +94,7 @@ const EmailSection = () => {
             </p>
           ) : (
             <form className="flex flex-col w-full" onSubmit={handleSubmit}>
-              <div className="mb-6 w-full">
+                 <div className="mb-6 w-full">
                 <label
                   htmlFor="email"
                   className="text-primary block mb-2 text-sm font-medium"
@@ -106,8 +106,7 @@ const EmailSection = () => {
                   type="email"
                   id="email"
                   required
-                  style={inputStyle}
-                  className="bg-[#2c2c2c] border border-primary placeholder-[#a0a0a0] text-gray-100 text-sm rounded-lg block w-full p-2.5"
+                  className="bg-[#18191E] border border-primary placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
                   placeholder="jacob@gmail.com"
                 />
               </div>
@@ -123,8 +122,7 @@ const EmailSection = () => {
                   type="text"
                   id="subject"
                   required
-                  style={inputStyle}
-                  className="bg-[#2c2c2c] border border-primary placeholder-[#a0a0a0] text-gray-100 text-sm rounded-lg block w-full p-2.5"
+                  className="bg-[#18191E] border border-primary placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
                   placeholder="Please enter your Subject"
                 />
               </div>
@@ -138,9 +136,7 @@ const EmailSection = () => {
                 <textarea
                   name="message"
                   id="message"
-                  required
-                  style={inputStyle}
-                  className="bg-[#2c2c2c] border border-primary placeholder-[#a0a0a0] text-gray-100 text-sm rounded-lg block w-full p-2.5"
+                  className="bg-[#18191E] border border-primary placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
                   placeholder="Let's talk about..."
                 />
               </div>

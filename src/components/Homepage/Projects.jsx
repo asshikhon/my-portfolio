@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import { FaGithub, FaLink } from "react-icons/fa";
 
 const Projects = () => {
   const sectionStyle = {
@@ -10,7 +11,7 @@ const Projects = () => {
 
   return (
     <section id="projects" style={sectionStyle} className="">
-      <div className="container mx-auto py-10 md:pt-20">
+      <div className="container mx-auto px-3 md:px-0 py-10 md:pt-20">
         <h2 className="text-[40px] font-semibold text-center">
           My <span className="text-primary">Projects</span>
         </h2>
@@ -63,18 +64,18 @@ const Projects = () => {
             </p>
 
             <div className="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-              <div className="text-center">
+              <div className="text-center flex">
                 <Link
                   href={`https://github.com/asshikhon/b9a12-surveyseeker-client`}
                   target="black"
                 >
-                  <button className="btn text-white bg-primary hover:bg-teal-800 border-0 text-base font-semibold mx-2 mb-2">
-                    Github Link
+                  <button className="btn flex items-center gap-2 text-white bg-primary hover:bg-teal-800 border-0 text-base font-semibold mx-2 mb-2">
+                  <FaGithub />   Github Link
                   </button>
                 </Link>
                 <Link href={`https://survey-seeker.web.app`} target="black">
-                  <button className="btn text-white bg-primary hover:bg-teal-800 border-0 text-base font-semibold mx-2">
-                    Live Link
+                <button className="btn flex items-center gap-2 text-white bg-primary hover:bg-teal-800 border-0 text-base font-semibold mx-2">
+                  <FaLink /> Live Link
                   </button>
                 </Link>
               </div>
@@ -126,21 +127,21 @@ const Projects = () => {
             </p>
 
             <div className="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-              <div className="text-center">
+              <div className="text-center flex">
                 <Link
                   href={`https://github.com/asshikhon/b9a11-restaurant-management-client`}
                   target="black"
                 >
-                  <button className="btn text-white bg-primary hover:bg-teal-800 border-0 text-base font-semibold mx-2 mb-2">
-                    Github Link
+                          <button className="btn flex items-center gap-2 text-white bg-primary hover:bg-teal-800 border-0 text-base font-semibold mx-2 mb-2">
+                  <FaGithub />   Github Link
                   </button>
                 </Link>
                 <Link
                   href={`https://b9a11-restaurant-management.web.app`}
                   target="black"
                 >
-                  <button className="btn text-white bg-primary hover:bg-teal-800 border-0 text-base font-semibold mx-2">
-                    Live Link
+                          <button className="btn flex items-center gap-2 text-white bg-primary hover:bg-teal-800 border-0 text-base font-semibold mx-2">
+                  <FaLink /> Live Link
                   </button>
                 </Link>
               </div>
@@ -188,21 +189,21 @@ const Projects = () => {
             </p>
 
             <div className="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-              <div className="text-center">
+              <div className="text-center flex ">
                 <Link
                   href={`https://github.com/asshikhon/b9a10-tourism-management-client`}
                   target="black"
                 >
-                  <button className="btn text-white bg-primary hover:bg-teal-800 border-0 text-base font-semibold mx-2 mb-2">
-                    Github Link
+                  <button className="btn flex items-center gap-2 text-white bg-primary hover:bg-teal-800 border-0 text-base font-semibold mx-2 mb-2">
+                  <FaGithub />   Github Link
                   </button>
                 </Link>
                 <Link
                   href={`https://tourism-management-ce48d.web.app`}
                   target="black"
                 >
-                  <button className="btn text-white bg-primary hover:bg-teal-800 border-0 text-base font-semibold mx-2">
-                    Live Link
+                  <button className="btn flex items-center gap-2 text-white bg-primary hover:bg-teal-800 border-0 text-base font-semibold mx-2">
+                  <FaLink /> Live Link
                   </button>
                 </Link>
               </div>

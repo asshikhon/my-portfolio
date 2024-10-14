@@ -1,81 +1,56 @@
-"use client"
+"use client";
 import Image from "next/image";
 import React from "react";
 import { FaFileDownload } from "react-icons/fa";
-import { Typewriter } from 'react-simple-typewriter'
+import { Typewriter } from 'react-simple-typewriter';
 
 const Banner = () => {
   const profileImagePath = "/images/banner.jpg";
+  const fileUrl = "https://drive.google.com/uc?export=download&id=1l68gfRjtm82-0fUd7uFjJ79muG64qE2q"; // Direct download link
 
   const handleDownload = () => {
-    const fileUrl = "https://docs.google.com/document/d/1nqLDmti6vdEmoTKNTJ-2aXYX9svjPv25WthmxA5EJoI/export?format=pdf"; // Replace with actual export link
-
-    fetch(fileUrl, {
-      headers: {
-        "Content-Type": "application/pdf", // Set appropriate content type if known
-      },
-    })
-      .then((response) => {
-        if (!response.ok) {
-          throw new Error("Network response was not ok");
-        }
-        return response.blob();
-      })
-      .then((blob) => {
-        const url = window.URL.createObjectURL(new Blob([blob]));
-        const link = document.createElement("a");
-        link.href = url;
-        link.setAttribute("download", "resume.pdf"); // Set desired file name here
-        document.body.appendChild(link);
-        link.click();
-        link.parentNode.removeChild(link);
-      })
-      .catch((error) => console.error("Error downloading file:", error));
+    const link = document.createElement("a");
+    link.href = fileUrl;
+    link.setAttribute("download", "resume.pdf"); // Set desired filename
+    document.body.appendChild(link);
+    link.click();
+    link.remove();
   };
 
   return (
     <div id="home" className="bg-[#000]">
       <div className="text-[#FFFFFF] px-3 md:px-0 flex justify-between flex-col md:flex-row gap-12 items-center container mx-auto py-28">
         <div className="mt-12">
-          {/* <h1 className="text-[32px] font-bold">Hello, It’s Me</h1> */}
-
-          <div className="font-semibold text-[#FFFFFF] text-[30px] ">
-            
-  <Typewriter 
-    words={['Hello It’s Me']}
-    loop={true}
-    cursor
-    cursorStyle='~~~'
-    typeSpeed={170}
-    deleteSpeed={80}
-    delaySpeed={1200}
-    style={{ fontSize: '24px' }} // Increase the text size
-  />
-</div>
+          <div className="font-semibold text-[#FFFFFF] text-[30px]">
+            <Typewriter
+              words={['Hello It’s Me']}
+              loop={true}
+              cursor
+              cursorStyle="~~~"
+              typeSpeed={170}
+              deleteSpeed={80}
+              delaySpeed={1200}
+              style={{ fontSize: '24px' }}
+            />
+          </div>
 
           <h2 className="h-[58px] w-[2px] font-bold mt-4">|</h2>
 
           <div className="text-2xl leading-[38px]">
             I’m a Mathematics Student, Who is <br /> Passionate in
-             
-            <div className="font-semibold text-primary text-2xl ">
-            
-            <Typewriter 
-              words={['Programming']}
-              loop={true}
-              cursor
-              cursorStyle='~~~'
-              typeSpeed={170}
-              deleteSpeed={80}
-              delaySpeed={1200}
-              style={{ fontSize: '24px' }} // Increase the text size
-            />
+            <div className="font-semibold text-primary text-2xl">
+              <Typewriter
+                words={['Programming']}
+                loop={true}
+                cursor
+                cursorStyle="~~~"
+                typeSpeed={170}
+                deleteSpeed={80}
+                delaySpeed={1200}
+                style={{ fontSize: '24px' }}
+              />
+            </div>
           </div>
-       
-
-          </div>
-
-
 
           <button
             onClick={handleDownload}
